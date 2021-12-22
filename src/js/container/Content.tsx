@@ -9,7 +9,6 @@ function Content(props: propsType): JSX.Element {
   return (
     <div className="content">
       <AppRouter/>
-      content
     </div>
   );
 }

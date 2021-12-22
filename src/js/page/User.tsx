@@ -7,6 +7,7 @@ interface propsType {
 function User(props: propsType): JSX.Element {
   return (
     <>
+      <h1>User</h1>
     </>
   );
 }
