@@ -14,7 +14,8 @@ interface propsType {
 function AppRouter(props: propsType): JSX.Element {
   return (
     <Routes>
-      <Route path="/" element={ <Home/> }/>
+      {/* <Route path="/" element={ <Home/> }/> */}
+      <Route path="/" element={ <Board/> }/>
       <Route path="board" element={ <Board/> }/>
       <Route path="user" element={ <User/> }/>
       <Route path="signIn" element={ <SignIn/> }/>

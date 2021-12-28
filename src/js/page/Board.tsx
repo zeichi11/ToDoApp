@@ -1,4 +1,6 @@
 import React from 'react';
+import { BoardContent, BoardHeader } from './board/';
+import CSS from 'csstype';
 
 interface propsType {
 
@@ -7,7 +9,8 @@ interface propsType {
 function Board(props: propsType): JSX.Element {
   return (
     <>
-      <h1>Board</h1>
+      <BoardHeader/>
+      <BoardContent/>
     </>
   );
 }

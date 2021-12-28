@@ -7,7 +7,7 @@ interface propsType {
 
 function Content(props: propsType): JSX.Element {
   return (
-    <div className="content">
+    <div className="content" style={{'borderCollapse': 'collapse'}}>
       <AppRouter/>
     </div>
   );
