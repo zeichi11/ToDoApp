@@ -1,22 +1,10 @@
 import React from 'react';
 import CSS from 'csstype';
 import Column from '../../component/Column';
+import { ColumnType } from '../../types/';
 
 interface propsType {
 
-}
-
-interface Card {
-  id: string;
-  name: string;
-  desc: string;
-  dueDate: string;
-}
-
-interface Column {
-  id: string;
-  title: string;
-  cardList: Card[];
 }
 
 function BoardContent(props: propsType): JSX.Element {
@@ -25,10 +13,10 @@ function BoardContent(props: propsType): JSX.Element {
     'flexFlow': 'row nowrap',
     'width': '100%', 
     'height': 'auto', 
-    'border': '1px solid #000000', 
+    'border': '1px solid #a1a1a1', 
     'boxSizing': 'border-box'
   };
-  const columns: Column[] = [
+  const columns: ColumnType[] = [
     {
       id: 'col1',
       title: 'column1',
@@ -93,7 +81,12 @@ function BoardContent(props: propsType): JSX.Element {
   const renderColumns = () => {
     return columns.map((column, index) => {
       return (
-        <Column key={index}/>
+        <Column 
+          key={index}
+          colId={column.id}
+          title={column.title}
+          cardList={column.cardList}
+        />
       );
     });
   }

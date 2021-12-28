@@ -5,11 +5,11 @@ interface propsType {
 
 }
 
-function BoardHeader(props: propsType): JSX.Element {
+function BoardMenu(props: propsType): JSX.Element {
   const boardHeaderCSS: CSS.Properties = {
     'width': '100%', 
     'height': '45px', 
-    'border': '1px solid #000000', 
+    'border': '1px solid #a1a1a1', 
     'boxSizing': 'border-box'
   };
 
@@ -21,4 +21,4 @@ function BoardHeader(props: propsType): JSX.Element {
   );
 }
 
-export default BoardHeader;
+export default BoardMenu;

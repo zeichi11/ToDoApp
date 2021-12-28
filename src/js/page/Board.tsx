@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoardContent, BoardHeader } from './board/';
+import { BoardContent, BoardMenu } from './board/';
 import CSS from 'csstype';
 
 interface propsType {
@@ -9,7 +9,7 @@ interface propsType {
 function Board(props: propsType): JSX.Element {
   return (
     <>
-      <BoardHeader/>
+      <BoardMenu/>
       <BoardContent/>
     </>
   );
